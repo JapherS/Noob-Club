@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.noobclub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoobClub">
+        <activity android:name=".MyPostListActivity"></activity>
+        <activity
+            android:name=".MatchWaitingActivity"
+            android:label="Matchmaking" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".MatchActivity"
+            android:label="Matchmaking" />
+        <activity
+            android:name=".CommunityActivity"
+            android:theme="@style/Theme.NoobClub.Game" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".GamePostDetailActivity"
+            android:theme="@style/Theme.NoobClub.Game" />
+        <activity
+            android:name=".GamePostListActivity"
+            android:theme="@style/Theme.NoobClub.Game" />
+        <activity
+            android:name=".GamePostEditActivity"
+            android:theme="@style/Theme.NoobClub.Game" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

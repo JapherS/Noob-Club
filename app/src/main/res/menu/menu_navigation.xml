@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomNavigationHome"
+        android:title="@string/home_page"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/bottomNavigationCommunity"
+        android:title="@string/community_page"
+        android:icon="@drawable/ic_community"/>
+
+    <item
+        android:id="@+id/bottomNavigationMatch"
+        android:title="@string/match_page"
+        android:icon="@drawable/ic_match"/>
+
+    <item
+        android:id="@+id/bottomNavigationProfile"
+        android:title="@string/profile_page"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

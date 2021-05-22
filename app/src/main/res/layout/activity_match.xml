@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_light"
+        android:textStyle="bold"
+        android:text="@string/match_page_title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navigation" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="503dp"
+        android:layout_marginHorizontal="30px"
+        android:alignmentMode="alignMargins"
+        android:background="@android:color/white"
+        android:columnCount="2"
+        android:rowCount="4"
+
+
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageButton
+            android:id="@+id/button_csgo"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:background="@drawable/banner_csgo"
+            android:onClick="onClick"
+            android:text="CSGO" />
+
+        <ImageButton
+            android:id="@+id/button_r6s"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:background="@drawable/banner_r6s"
+            android:onClick="onClick"
+            android:text="Rainbow six seige" />
+
+        <ImageButton
+            android:id="@+id/button_ow"
+
+            android:layout_width="400px"
+            android:layout_height="250px"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:background="@drawable/banner_ow"
+            android:onClick="onClick"
+            android:text="OVER WATCH" />
+
+        <ImageButton
+            android:id="@+id/button_apex"
+            android:layout_width="400px"
+            android:layout_height="250px"
+
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:background="@drawable/banner_apex"
+            android:onClick="onClick"
+            android:text="APEX LEGENDS" />
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

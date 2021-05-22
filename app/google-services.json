@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "807238954427",
+    "firebase_url": "https://noob-club-default-rtdb.firebaseio.com",
+    "project_id": "noob-club",
+    "storage_bucket": "noob-club.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807238954427:android:f7d5cc7f0f0ed78115689e",
+        "android_client_info": {
+          "package_name": "edu.neu.madcourse.noobclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807238954427-b9ci70lkkct352pesl9g8m2m07okio4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzWGkFIPgbzR3Qs6-pmDhLSncPUQgdhok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807238954427-b9ci70lkkct352pesl9g8m2m07okio4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

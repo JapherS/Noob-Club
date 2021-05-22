@@ -1,0 +1,48 @@
+<resources>
+    <!--Nav bar -->
+    <string name="app_name">NoobClub</string>
+    <string name="home_page">Home</string>
+    <string name="community_page">Community</string>
+    <string name="match_page">Match</string>
+    <string name="profile_page">Me</string>
+    <!--Nav bar -->
+
+    <!-- Match & MatchWaiting page   -->
+    <string name="match_page_title">Choose a game to match for</string>
+    <string name="match_waiting_title">Scroll down the button to match</string>
+    <string name="button_start_match">START MATCHING</string>
+    <!-- Match & MatchWaiting page   -->
+
+    <!-- Profile before log in   -->
+    <string name="button_sign_in">SIGN IN</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="sign_in_up_divider">OR</string>
+    <!-- Profile before log in   -->
+
+    <!-- Profile After log in   -->
+    <string name="my_post">My Post</string>
+    <string name="log_out">Log Out</string>
+    <!-- Profile After log in   -->
+
+    <!-- Register page   -->
+    <string name="register_sign_up_title">Sign Up</string>
+    <string name="register_join_title">Join our community!</string>
+    <string name="register_button_join_now">JOIN NOW</string>
+    <string name="register_button_sign_in">SIGN IN</string>
+    <!-- Register page   -->
+
+    <!-- Log in page   -->
+    <string name="log_in_title">Sign in</string>
+    <string name="log_in_sub_title">Welcome back!</string>
+    <string name="log_in_button_sign_in">Go</string>
+    <string name="log_in_button_sign_up">SIGN UP</string>
+    <!-- Log in page   -->
+
+    <!-- Post edit page   -->
+    <string name="game_post_edit_button_post">Post</string>
+    <!-- Post edit page   -->
+
+    <!-- Avatar selector dialog -->
+    <string name="avatar_selector_choose_title">Choose Your Avatar</string>
+    <!-- Avatar selector dialog -->
+</resources>

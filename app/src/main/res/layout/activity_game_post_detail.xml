@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePostDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/topicInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_avatar"/>
+
+        <TextView
+            android:id="@+id/creatorNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/avatarIv"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:text="jeck23333333"/>
+
+        <TextView
+            android:id="@+id/createTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:text="2021-02-21 02:34"/>
+
+        <TextView
+            android:id="@+id/topicTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creatorNameTv"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="22sp"
+            android:textColor="#212121"
+            android:text="this is a game topic"/>
+
+        <TextView
+            android:id="@+id/topicContentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topicTitleTv"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="18sp"
+            android:textColor="#212121"
+            android:text="this is a game topic"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/replyRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/topicInfoLayout"
+        app:layout_constraintBottom_toTopOf="@id/toolsLayout"/>
+
+    <LinearLayout
+        android:id="@+id/toolsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_voice"/>
+
+        <EditText
+            android:id="@+id/msgEt"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/et_underline_style"
+            android:textCursorDrawable="@null"/>
+
+        <ImageView
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_send"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="0.6"
+        app:menu="@menu/menu_navigation"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

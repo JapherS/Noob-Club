@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/grey">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/postCardAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:srcCompat="@drawable/login"
+                />
+
+            <TextView
+                android:id="@+id/postCardAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-10dp"
+                android:text="potatoNoob"
+                android:textColor="@color/white"
+
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/postCardCreatedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="34 min"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:textSize="30dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/postCardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to actually disable frame capping?"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="22dp"
+                app:srcCompat="@drawable/game_icon" />
+
+            <TextView
+                android:id="@+id/postCardGameType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bannerlord"
+                android:layout_marginTop="23dp"
+                android:layout_marginStart="5dp"
+                android:textSize="13dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="23dp"
+                    app:srcCompat="@drawable/reply_icon" />
+
+                <TextView
+                    android:id="@+id/postCardNumReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:layout_marginTop="23dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="6dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
