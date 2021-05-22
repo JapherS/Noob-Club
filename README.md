@@ -1,4 +1,4 @@
-![](https://github.com/JapherS/NoobClub/blob/master/Screenshot.png)
+![](https://github.com/JapherS/Noob-Club/blob/master/Screenshot.png)
 
 # NoobClub - A Gaming Social Media Android Mobile Application 
 Team members: Japher Su, Zejun Li, Hao Zheng, Zixin Wu
@@ -12,7 +12,6 @@ Noobs thrive
 
 ## Target users
 General target: Anyone who plays game
-
 
 Primary target: Gamers age 16 - 50
 
