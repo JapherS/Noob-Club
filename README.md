@@ -27,5 +27,8 @@ NoobClub supports the feature of matching other gamer buddy by sorting/filtering
 ## Sensor
 Users can choose a particular game in the app and then shake their device to match with another player.
 
+## Technology Stack
+Java (Android Studio), Firebase.
+
 ## Video Demo
 [![Overview](https://img.youtube.com/vi/FcP4WRdJCto/0.jpg)](https://www.youtube.com/watch?v=FcP4WRdJCto)
